@@ -28,15 +28,11 @@ line_number=$1
 block_number=$2
 article_id=$3
 
-echo "calculating file size..."
+echo "calculating block size..."
 IFS=$'\n'
 tail -n +"$line_number" "$INDEX_FILE" | while IFS=: read -r current_block _ _; do
   if [ "$current_block" -gt "$block_number" ]; then
     block_size=$(( current_block - block_number ))
-    echo "offset: $block_number"
-    echo "file_size: $block_size"
-    echo "article_id: $article_id"
-
     python3 extract_article.py "$block_number" "$block_size" "$article_id" "$WIKI_FILE"
     break
   fi
