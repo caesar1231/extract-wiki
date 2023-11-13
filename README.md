@@ -1,13 +1,13 @@
 ### 事前準備
-1. [日本語wikiのダンプデータ](https://dumps.wikimedia.org/jawiki/latest/)から下記ファイルをダウンロードする。
+1. data, wikiディレクトリを作成
+2. [日本語wikiのダンプデータ](https://dumps.wikimedia.org/jawiki/latest/)から下記ファイルをダウンロードする。
 めちゃくちゃ時間がかかるので気を付けること。
 - jawiki-latest-pages-articles-multistream-index.txt.bz2
   - 日本語wikiのインデックス
 - jawiki-latest-pages-articles-multistream.xml.bz2 
   - 日本語wikiの記事全部
-
-2. data, wikiディレクトリを作成
-3. pythonを入れておく
+3. ダウンロードしたファイル２つをdata以下に配置
+4. pythonを入れておく
 
 ### 実行方法
 
