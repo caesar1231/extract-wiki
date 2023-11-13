@@ -1,3 +1,6 @@
+## 本プロジェクト
+指定したwikiの記事データをぶっこ抜く
+
 ### 事前準備
 1. data, wikiディレクトリを作成
 2. [日本語wikiのダンプデータ](https://dumps.wikimedia.org/jawiki/latest/)から下記ファイルをダウンロードする。
