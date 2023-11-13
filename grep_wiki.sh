@@ -4,6 +4,10 @@ INDEX_FILE="./data/wiki-index.txt"
 WIKI_FILE="./data/wiki.xml.bz2"
 
 lines=$(grep -n "$1" "$INDEX_FILE")
+if [ -z "$lines" ]; then
+  echo "No such term"
+  exit 1
+fi
 
 # ask to select the line
 echo "Please select the line number"
